@@ -7,11 +7,11 @@ provider:
   region: ap-northeast-2
   iam:
     role:
-      name: lambda-role-stream-dynamodb
+      name: inha-cc-<<YOUR NUMBER>>-lambda-role-stream-dynamodb
       path: /custom-role-path/
       statements:
         - Effect: "Allow"
-          Resource: "arn:aws:logs:ap-northeast-2:<<AWS ACCOUNT ID>>:*"
+          Resource: "arn:aws:logs:ap-northeast-2:${file(../serverless.env.yml):ACCOUNT_ID}:*"
           Action:
             - "logs:CreateLogGroup"
             - "logs:CreateLogStream"

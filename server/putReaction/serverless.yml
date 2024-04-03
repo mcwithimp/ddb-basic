@@ -7,11 +7,11 @@ provider:
   region: ap-northeast-2
   iam:
     role:
-      name: lambda-role-update-dynamodb
+      name: inha-cc-<<YOUR NUMBER>>-lambda-role-update-dynamodb
       path: /custom-role-path/
       statements:
         - Effect: "Allow"
-          Resource: "arn:aws:dynamodb:ap-northeast-2:<<AWS ACCOUNT ID>>:table/chat-messages"
+          Resource: "arn:aws:dynamodb:ap-northeast-2:${file(../serverless.env.yml):ACCOUNT_ID}:table/chat-messages"
           Action: "dynamodb:UpdateItem"
 
 functions:

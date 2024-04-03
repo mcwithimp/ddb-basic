@@ -7,7 +7,7 @@ provider:
   region: ap-northeast-2
   iam:
     role:
-      name: lambda-role-put-dynamodb
+      name: inha-cc-<<YOUR NUMBER>>-lambda-role-put-dynamodb
       path: /custom-role-path/
       statements:
         - Effect: "Allow"
