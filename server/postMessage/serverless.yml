@@ -1,4 +1,4 @@
-service: INHA-CC-<<YOUR NUMBER>>-POST-MSG
+service: inha-cc-<<YOUR NUMBER>>-post-msg
 frameworkVersion: "3"
 
 provider:

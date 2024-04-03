@@ -1,4 +1,4 @@
-service: INHA-CC-<<YOUR NUMBER>>-PUSH-NOTIFICATION
+service: inha-cc-<<YOUR NUMBER>>-push-notification
 frameworkVersion: "3"
 
 provider:

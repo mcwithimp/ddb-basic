@@ -1,4 +1,4 @@
-service: INHA-CC-<<YOUR NUMBER>>-PUT-REACTION
+service: inha-cc-<<YOUR NUMBER>>-put-reaction
 frameworkVersion: "3"
 
 provider:
